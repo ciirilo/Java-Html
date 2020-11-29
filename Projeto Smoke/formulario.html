@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmokePage</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="small.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="medium.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:1100px)" href="large.css"/>
+
+    
+
+</head>
+<body>
+   <div id="interface"> 
+    <nav id="menu">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="index.html"> Home</a></li>   
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="formulario.html">Fale Conosco</a></li>
+        </ul>
+        </nav>
+        <h1>Fale Conosco</h1>
+        <hr>
+   </div>
+   <div id="interface2">
+        <h1>Contato</h1> <hr>
+        <form method="POST" action="formulario.php">
+
+           <fieldset id="usuario"> <legend>Deixe seu Contato</legend><p>Nome: <input type="text" name="nome" required></p>
+                    <p>Data de Nascimento: <input type="date" name="ano" maxlength="2" required></p>
+                    <p>E-mail: <input type="email" name="email" required></p>
+                    <p>Telefone: <input type="text" name="tel" required></p>
+                
+                    <input type="submit" value="Enviar"> 
+            </fieldset>
+            <br>
+           
+        </form>  
+      
+   </div>
+</body>
+
+<footer> 
+    <p>Copyright 2020 - by s3x <br> 
+    <a  href="http://facebook.com/lunogueiraoficial" target="blank">Facebook</a> | <a href="http://instagram.com/lunogueiraoficial" target="blank">Instagram</a></p>
+</footer>
+
+</html>
