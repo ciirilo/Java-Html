@@ -155,7 +155,7 @@ public class TelaVerificador extends javax.swing.JFrame {
         int num = (int) txtIdade.getValue();
         int idade = data - num;
         String estado ;
-        if (idade>=18 && idade<70){
+        if (idade>=18 && idade<65){
             estado = "Obrigatório";
             lblIdade.setText(Integer.toString(idade));
             lblResultado.setText(estado);
