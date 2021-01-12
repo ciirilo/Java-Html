@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package calculadora;
 
 /**
@@ -313,7 +309,9 @@ public class LayoutCalc extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }                        
+
+    //Botões Numéricos 
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
             txtResultado.setText(txtResultado.getText()+"0");
@@ -324,58 +322,62 @@ public class LayoutCalc extends javax.swing.JFrame {
     }                                        
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"2");
     }                                        
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"3");
     }                                         
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"4");
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"5");
     }                                        
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"6");
     }                                         
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"7");
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"8");
     }                                        
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+"9");
     }                                         
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         txtResultado.setText(txtResultado.getText()+".");
     }                                         
 
+    // Botão CE
+
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         txtResultado.setText("");
         txtSum.setText("");
     }                                         
 
+    // Botão Soma
+
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         
         valor1 = Double.parseDouble(txtResultado.getText());
         txtSum.setText(txtSum.getText()+ txtResultado.getText()+" + ");
@@ -383,8 +385,10 @@ public class LayoutCalc extends javax.swing.JFrame {
         txtResultado.setText("");
     }                                         
 
+    // Botão Igual
+
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         valor2 = Double.parseDouble(txtResultado.getText());
         switch (sinal){
             case "soma":
@@ -406,32 +410,38 @@ public class LayoutCalc extends javax.swing.JFrame {
         }
     }                                         
 
+    // Botão Subtração
+
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         valor1 = Double.parseDouble(txtResultado.getText());
         txtSum.setText(txtSum.getText()+ txtResultado.getText()+" - ");
         sinal = "sub";
         txtResultado.setText("");
     }                                         
 
+    // Botão Multiplicação
+
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         valor1 = Double.parseDouble(txtResultado.getText());
         txtSum.setText(txtSum.getText()+ txtResultado.getText()+" * ");
         sinal = "mult";
         txtResultado.setText("");
     }                                         
 
+    // Botão Divisão 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         valor1 = Double.parseDouble(txtResultado.getText());
         txtSum.setText(txtSum.getText()+ txtResultado.getText()+" / ");
         sinal = "div";
         txtResultado.setText("");
     }                                         
 
+    // Botão C
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+        
         valor1 = null;
         valor2 = null;
         txtResultado.setText("");
