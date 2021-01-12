@@ -366,15 +366,34 @@ public class LayoutCalc extends javax.swing.JFrame {
         txtResultado.setText(txtResultado.getText()+".");
     }                                         
 
+    // Botão CE
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        txtResultado.setText("");
+        txtSum.setText("");
+    }                                         
+
+    // Botão Soma
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        
+        valor1 = Double.parseDouble(txtResultado.getText());
+        txtSum.setText(txtSum.getText()+ txtResultado.getText()+" + ");
+        sinal = "soma";
+        txtResultado.setText("");
+    }                                         
 
     // Botão Igual
+
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         
         valor2 = Double.parseDouble(txtResultado.getText());
         switch (sinal){
             case "soma":
-                txtSum.setText(txtSum.getText()+ txtResultado.getText()+" = "); // TxtSum Mostra as operações realizadas 
-                txtResultado.setText(Double.toString(valor1+valor2));           // anteriormente.
+                txtSum.setText(txtSum.getText()+ txtResultado.getText()+" = ");
+                txtResultado.setText(Double.toString(valor1+valor2));
                 break;
             case "sub":
                 txtSum.setText(txtSum.getText()+ txtResultado.getText()+" = ");
@@ -389,17 +408,7 @@ public class LayoutCalc extends javax.swing.JFrame {
                 txtResultado.setText(Double.toString(valor1/valor2));
                 break;
         }
-    } 
-
-    // Botão Soma
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        
-        valor1 = Double.parseDouble(txtResultado.getText());
-        txtSum.setText(txtSum.getText()+ txtResultado.getText()+" + ");
-        sinal = "soma";
-        txtResultado.setText("");
-    }                                        
+    }                                         
 
     // Botão Subtração
 
@@ -412,6 +421,7 @@ public class LayoutCalc extends javax.swing.JFrame {
     }                                         
 
     // Botão Multiplicação
+
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         
         valor1 = Double.parseDouble(txtResultado.getText());
@@ -427,15 +437,7 @@ public class LayoutCalc extends javax.swing.JFrame {
         txtSum.setText(txtSum.getText()+ txtResultado.getText()+" / ");
         sinal = "div";
         txtResultado.setText("");
-    }
-
-    // Botão CE
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        txtResultado.setText("");
-        txtSum.setText("");
     }                                         
-                                       
 
     // Botão C
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
